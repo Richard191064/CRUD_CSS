@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación de Persona</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #32eb85;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            width: 90%;
+            max-width: 1600px;
+        }
+        .section {
+            background-color: #5ca0c0;
+            border: 2px solid #ee1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .section img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .gap_below {
+            margin-bottom: 25px;
+          }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section">
+        <h2>CRUD</h2>
+        <p class="title">Competencia especifica</p>
+        <p><li>Aplica un lenguaje de programación del lado del servidor para el desarrollo de una aplicación.
+            <li>Aplica un patrón de diseño arquitectónico de software por capas para el desarrollo de un CRUD.</p>
+        
+        <p class="title">Descripción</p>
+        <p class="gap_below"> Implementa un patron de dieño arquitectónico de software por capas, para el
+            desarrollo de una herramienta que muestre la implementación de operaciones de: <br>
+          <ol>
+            <li><strong>Crear</strong> un registro con atributos y los escribe a una base de datos relacionales.
+            <li><strong>Leer</strong> un registro y renderiza sus atributos en una página electrónica.
+            <li><strong>Actuizar</strong> los atributos de un registro.
+            <li><strong>Eliminar</strong> un registro de una base de datos.
+          </ol>
+          </p>
+  
+
+    </div>
+    
+    <div class="section">
+        <h2>INSTALACIÓN</h2>
+        <ol>
+            <li>Descargar el contenido del repositirio: <a href="https://github.com/miRepositorioGit/tresCapasPhp/archive/refs/heads/main.zip" >tresCapasPhp.</a>Renombrar el archivo.</li>  
+            <li>Descomprimir e instalar el proyecto en la carpeta <strong>htdocs</strong>. </li>  
+            <li>Ejecutar como administrador la aplicación <strong>xampp-control.exe</strong>, inicializar los servicios de Apache y MySQL.</li>  
+            <li>Desde el sistema de gestion de base de datos <i>phpMyAdmin</i>. Crear una base de datos con el nombre <u><i>libreria</i></u> e importar el archivo  <u><i>libros.sql</i></u></li>  
+            <li>Escribir la petición <strong>CRUD_LeeMe/</strong> en la barra del navegador <i>apache</i>.  
+            <li>Seleccionar <u>Dar de alta un libro</u>. Rellear todos los campos. Seleccionar el control Enviar.</li>
+            <li>Seleccionar <u>Modificar</u>. Reescribir uno, varios campos. Seleccionar el control Enviar.</li> 
+            <li>Seleccionar <u>Borrar</u> Vefificar la actualidad de los registros de la tabla</li>
+            <li>Escribir una petición, <strong>CRUD_LeeMe/libros/info</strong> en la barra de direcciones del navegador.</li>
+          </ol>
+    </div>
+
+    <div class="section">
+        <h2>INFORMACIÓN</h2>
+        <h5>El árbol de dependencia muestra la implementación desarrollada. Una petición URL es 
+            gestionada por el archivo <i>.htacces</i>, que es un archivo de texto que se utiliza para 
+            configurar el comportamiento del servdor Apache.  El archivo .htacces puede:
+             <ol type="i">
+              <li>Redirigir una petición URL tipo genérica, hacia la carpeta /public. </li>
+              <li>Evitar indexar los contenidos del proyecto</li>
+             </ol>
+            La estructura de archivos contiene dos carpetas.
+            <ol type=a>
+              <li><b>/app</b> Contine colecciones de carpetas de soporte para el desarollo de la aplicación. 
+                Sus contenidos son sólo accesibles para el desarroll@r. 
+              <li><b>/public</b> Contiene colecciones de carpetas con los recursos informáticos disponibles
+                para las peiciones del usuario. 
+            </ol>  
+          </h5> 
+  
+    </div>
+
+    <div class="section">
+        <h2>Agregar Contenido</h2>
+            
+    </div>
+</div>
+
+</body>
+</html>
